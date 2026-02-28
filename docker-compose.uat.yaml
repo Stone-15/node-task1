@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app-uat:
+    image: node-img:main
+    container_name: node-app-uat
+    ports:
+      - "3003:3003"
+    environment:
+      - NODE_ENV=uat
+      - PORT=3003
+    restart: unless-stopped

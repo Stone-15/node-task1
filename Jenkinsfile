@@ -34,7 +34,7 @@ pipeline {
 
         stage('Deploy to Dev') {
             when {
-                expression { env.BRANCH_NAME?.startsWith('feature') }
+                expression { env.BRANCH_NAME?.startsWith('develop') }
             }
             steps {
                 echo "Deploying to DEV environment → http://localhost:3001"
@@ -47,7 +47,7 @@ pipeline {
 
         stage('Deploy to QA') {
             when {
-                branch 'develop'
+                branch 'qa'
             }
             steps {
                 echo "Deploying to QA environment → http://localhost:3002"
@@ -60,7 +60,7 @@ pipeline {
 
         stage('Deploy to UAT') {
             when {
-                branch 'main'
+                branch 'uat'
             }
             steps {
                 echo "Deploying to UAT environment → http://localhost:3003"

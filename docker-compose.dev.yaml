@@ -2,7 +2,6 @@ version: '3'
 services:
   app-dev:
     image: node-img:develop
-    container_name: node-app-dev
     ports:
       - "3001:3001"
     environment:

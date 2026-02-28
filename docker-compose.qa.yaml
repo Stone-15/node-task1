@@ -1,7 +1,7 @@
 version: '3'
 services:
   app-qa:
-    image: node-img:develop
+    image: node-img:qa
     container_name: node-app-qa
     ports:
       - "3002:3002"

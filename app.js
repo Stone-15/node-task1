@@ -14,7 +14,7 @@ const envConfig = {
     defaultPort: 3001
   },
   qa: {
-    message: 'Hi, I am QA environment! 🧪',
+    message: 'Hello from Aaron again!!! 🧪',
     description: 'Quality Assurance environment for testing',
     color: '#ffc107',
     debug: false,

@@ -7,7 +7,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 // Environment configuration with specific ports
 const envConfig = {
   development: {
-    message: 'Hi, I am DEV environment! 🚀',
+    message: 'Hello from Aaron, checking!!! 🚀',
     description: 'Hi from Aaron!!!',
     color: '#28a745',
     debug: true,
